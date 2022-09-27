@@ -31,7 +31,7 @@ formTag.addEventListener('submit', aoSubmeter)
 function aoSubmeter(event) {    
     event.preventDefault()
 
-    const valorDoInput = inputTag.value
+    const valorDoInput = inputTag.value.toLowerCase()
 
     if(procuraSobremesa(valorDoInput)) {
         renderizaSobremesas(procuraSobremesa(valorDoInput))

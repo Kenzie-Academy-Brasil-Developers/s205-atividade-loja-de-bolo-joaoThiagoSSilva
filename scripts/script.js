@@ -1,5 +1,14 @@
 function procuraSobremesa(valorDoInput) {
-    /* Desenvolva sua lógica a partir aqui */
     
-    return /* É necessário retornar uma lista de produtos */
+    let aux = []
+     listaDeSobremesas.forEach((e) => {
+        const nomeDaLista = e.nome
+        if(nomeDaLista.toLowerCase().includes(valorDoInput)){
+            aux.push(e)
+
+        }
+  })
+    
+    return aux 
 }
+procuraSobremesa(listaDeSobremesas)
